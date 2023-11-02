@@ -5,7 +5,7 @@ function Product({ title, price, features }) {
     <div className="Product">
       <h3>{title}</h3>
       <p>Price: {price}</p>
-      {/* <p>{features.map((feature) => <li>{feature}</li>)}</p> */}
+      {price > 30000 ? <p>Discount of 5%</p> : null }
     </div>
   );
 }
