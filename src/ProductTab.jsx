@@ -2,14 +2,19 @@ import React from 'react';
 import Product from './Product.jsx';
 
 function ProductTab() {
-  let options = ['hi-tech', 'durable', 'fast'];
-
+  let styles = {
+     display: "flex",
+     flexwrap: "wrap",
+     justifyContent: "center",
+     alignItem: "center",
+  }
   return (
-    <>
-      <Product title="phone" price={30000} />
-      <Product title="laptop" price={40000} />
-      <Product title="pen" price={10}  />
-    </>
+    <div style={styles}>
+      <Product title="Logitech MX Mater" idx={0}/>
+      <Product title="Apple pencil" idx={1}/>
+      <Product title="Zebronics" idx={2}/>
+      <Product title="Petronics Toad 23" idx={3}/>
+    </div>
   );
 }
 
